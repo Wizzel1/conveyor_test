@@ -48,8 +48,8 @@ jobs:
       - if: ${{ matrix.target == 'macos' }}
         name: 'MacOS: Thin binary'
         run: >-
-          lipo build/macos/Build/Products/Release/conveyor_test.app/Contents/MacOS/convecyor_test
-          -output build/macos/Build/Products/Release/conveyor_test.app/Contents/MacOS/convecyor_test
+          lipo build/macos/Build/Products/Release/conveyor_test.app/Contents/MacOS/conveyor_test
+          -output build/macos/Build/Products/Release/conveyor_test.app/Contents/MacOS/conveyor_test
           -thin ${{ matrix.lipo-arch }}
 
       - if: ${{ matrix.target == 'windows' }}
