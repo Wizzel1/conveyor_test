@@ -48,8 +48,8 @@ jobs:
       - if: ${{ matrix.target == 'macos' }}
         name: 'MacOS: Thin binary'
         run: >-
-          lipo build/macos/Build/Products/Release/flutter_demo.app/Contents/MacOS/flutter_demo
-          -output build/macos/Build/Products/Release/flutter_demo.app/Contents/MacOS/flutter_demo
+          lipo build/macos/Build/Products/Release/conveyor_test.app/Contents/MacOS/convecyor_test
+          -output build/macos/Build/Products/Release/conveyor_test.app/Contents/MacOS/convecyor_test
           -thin ${{ matrix.lipo-arch }}
 
       - if: ${{ matrix.target == 'windows' }}
@@ -63,7 +63,7 @@ jobs:
         name: 'MacOS: Tar results'
         run: >-
           tar cvf build-${{ matrix.target }}-${{ matrix.arch }}.tar
-          -C build/macos/Build/Products/Release flutter_demo.app
+          -C build/macos/Build/Products/Release conveyor_test.app
 
       - if: ${{ matrix.target == 'linux' }}
         name: 'Linux: Tar results'
