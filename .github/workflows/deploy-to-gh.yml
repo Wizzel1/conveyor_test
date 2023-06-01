@@ -37,7 +37,7 @@ jobs:
           path: ./artifacts          
         
       - name: Run Conveyor     
-        uses: hydraulic-software/conveyor/actions/build@v1
+        uses: hydraulic-software/conveyor/actions/build@v9.1
         with:
           command: make site          
           signing_key: ${{ secrets.SIGNING_KEY }}
