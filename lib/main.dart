@@ -14,13 +14,13 @@ class MainApp extends StatelessWidget {
         body: Center(
           child: Column(
             children: const [
-              Text('Hello Test! 5'),
-              Text('Hello Test! 5'),
-              Text('Hello Test! 5'),
-              Text('Hello Test! 5'),
-              Text('Hello Test! 5'),
-              Text('Hello Test! 5'),
-              Text('Hello Test! 5'),
+              Text('Moin Meister'),
+              Text('Moin Meister'),
+              Text('Moin Meister'),
+              Text('Moin Meister'),
+              Text('Moin Meister'),
+              Text('Moin Meister'),
+              Text('Moin Meister'),
             ],
           ),
         ),
