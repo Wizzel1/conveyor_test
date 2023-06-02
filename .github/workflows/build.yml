@@ -1,6 +1,6 @@
 name: Flutter Build
 
-on: [push, workflow_dispatch, workflow_call]
+on: [workflow_dispatch, workflow_call]
 jobs:
   build:
     strategy:
