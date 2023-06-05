@@ -40,6 +40,7 @@ jobs:
         uses: hydraulic-software/conveyor/actions/build@v9.1
         env:
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+            NOTARIZATION_ASP : ${{ secrets.NOTARIZATION_ASP }}
         with:
           command: make copied-site --overwrite          
           signing_key: ${{ secrets.SIGNING_KEY }}
