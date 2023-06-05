@@ -37,7 +37,7 @@ jobs:
           path: ./artifacts          
         
       - name: Run Conveyor     
-        uses: hydraulic-software/conveyor/actions/build@v9.2
+        uses: hydraulic-software/conveyor/actions/build@v9.1
         env:
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
             NOTARIZATION_ASP : ${{ secrets.NOTARIZATION_ASP }}
