@@ -9,18 +9,18 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       home: Scaffold(
         body: Center(
           child: Column(
-            children: const [
-              Text('Moin Meister'),
-              Text('Moin Meister'),
-              Text('Moin Meister'),
-              Text('Moin Meister'),
-              Text('Moin Meister'),
-              Text('Moin Meister'),
-              Text('Moin Meister'),
+            children: [
+              Text('Moin Meister1'),
+              Text('Moin Meister1'),
+              Text('Moin Meister1'),
+              Text('Moin Meister1'),
+              Text('Moin Meister1'),
+              Text('Moin Meister1'),
+              Text('Moin Meister1'),
             ],
           ),
         ),
